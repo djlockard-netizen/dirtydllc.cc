@@ -20,9 +20,10 @@ body{
   font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;
   background:var(--bg);
   color:#fff;
+  font-size:18px;
 }
 
-/* ---------- NAV ---------- */
+/* NAV */
 .nav{
   position:fixed;
   top:0;left:0;right:0;
@@ -34,12 +35,11 @@ body{
   background:rgba(0,0,0,.5);
   backdrop-filter:blur(6px);
 }
-
-.brand{font-weight:700;font-size:1.25rem;}
+.brand{font-weight:700;font-size:1.35rem;}
 .brand span{color:var(--blue);}
 .menu{font-size:1.4rem}
 
-/* ---------- HERO ---------- */
+/* HERO */
 .hero{
   min-height:100vh;
   padding:100px 18px 40px;
@@ -49,9 +49,7 @@ body{
     linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
     radial-gradient(900px 600px at 80% 10%, rgba(25,167,255,.15), transparent 60%);
 }
-
-.hero-inner{max-width:520px;width:100%}
-
+.hero-inner{max-width:540px;width:100%}
 .badge{
   display:inline-flex;
   gap:8px;
@@ -59,29 +57,25 @@ body{
   color:var(--blue);
   padding:10px 14px;
   border-radius:6px;
-  margin-bottom:20px;
-  font-size:.85rem;
+  margin-bottom:22px;
+  font-size:.9rem;
 }
-
-.title{font-weight:900;line-height:.95;margin-bottom:14px;}
-.title div{font-size:3.2rem;}
+.title{font-weight:900;line-height:.95;margin-bottom:16px;}
+.title div{font-size:3.5rem;}
 .title .blue{color:var(--blue);}
-
-.tagline{font-style:italic;font-size:1.3rem;margin-bottom:12px;}
-.sub{color:#cfcfcf;line-height:1.6;margin-bottom:22px;}
-
+.tagline{font-style:italic;font-size:1.4rem;margin-bottom:14px;}
+.sub{color:#cfcfcf;line-height:1.7;margin-bottom:22px;font-size:1.05rem;}
 .btn{
   display:block;
   text-align:center;
-  padding:16px;
+  padding:18px;
   background:var(--blue);
   color:#00131f;
   text-decoration:none;
-  font-weight:700;
+  font-weight:800;
   border-radius:4px;
   margin-bottom:18px;
 }
-
 .callbar{
   border:1px solid rgba(255,255,255,.15);
   padding:14px;
@@ -90,62 +84,50 @@ body{
   text-align:center;
 }
 
-/* ---------- SECTIONS ---------- */
-
+/* SECTIONS */
 .section{
   padding:60px 18px;
   max-width:900px;
   margin:auto;
 }
-
-h2{
-  margin-top:0;
-  font-size:2rem;
-}
-
+h2{margin-top:0;font-size:2.4rem;}
 h2 span{color:var(--blue);}
-
 .muted{color:#cfcfcf}
 
-/* ---------- SERVICE CARDS ---------- */
-
-.cards{
-  display:grid;
-  gap:18px;
-}
-
+/* CARDS */
+.cards{display:grid;gap:18px;}
 .card{
   background:linear-gradient(180deg,#191919,#121212);
   border-radius:10px;
   padding:20px;
   border:1px solid rgba(255,255,255,.05);
 }
+.card.highlight{border:1px solid rgba(25,167,255,.6);}
+.card h3{margin-top:8px;font-size:1.25rem}
+.price{color:var(--blue);font-weight:800;margin-top:10px}
 
-.card.highlight{
-  border:1px solid rgba(25,167,255,.6);
+/* BEFORE AFTER */
+.ba-grid{display:grid;gap:22px;}
+.ba-card{
+  background:linear-gradient(180deg,#191919,#121212);
+  padding:12px;
+  border-radius:10px;
+  border:1px solid rgba(255,255,255,.06);
 }
-
-.card h3{margin-top:8px}
-.price{color:var(--blue);font-weight:700;margin-top:10px}
-
-/* ---------- GALLERY ---------- */
-
-.gallery{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:10px;
-}
-
-.gallery img{
+.ba-card img{
   width:100%;
   border-radius:8px;
-  object-fit:cover;
+  margin-bottom:6px;
+}
+.ba-label{
+  text-align:center;
+  color:var(--blue);
+  font-weight:800;
+  margin-bottom:10px;
 }
 
-/* ---------- TESTIMONIALS ---------- */
-
+/* TESTIMONIALS */
 .stars{color:var(--blue);letter-spacing:2px;margin-bottom:8px}
-
 .avatar{
   width:36px;height:36px;
   border-radius:6px;
@@ -154,45 +136,34 @@ h2 span{color:var(--blue);}
   display:flex;
   align-items:center;
   justify-content:center;
-  font-weight:700;
+  font-weight:800;
   margin-right:10px;
 }
 
-/* ---------- CONTACT BLOCKS ---------- */
-
-.contact-card{
-  display:flex;
-  gap:14px;
-  align-items:center;
-  margin-bottom:14px;
-}
-
-/* ---------- FORM ---------- */
-
+/* FORM */
 input,select,textarea{
   width:100%;
   background:#1a1a1a;
   border:1px solid rgba(255,255,255,.12);
   color:#fff;
-  padding:12px;
+  padding:13px;
   border-radius:4px;
-  margin-bottom:14px;
+  margin-bottom:16px;
+  font-size:1rem;
 }
-
-label{font-size:.9rem;color:#ddd}
-
+label{font-size:.95rem;color:#ddd}
 .submit{
   background:var(--blue);
   border:none;
   color:#00131f;
-  font-weight:700;
-  padding:14px;
+  font-weight:800;
+  padding:16px;
   width:100%;
   border-radius:4px;
+  font-size:1.05rem;
 }
 
-/* ---------- MAP ---------- */
-
+/* MAP */
 .map iframe{
   width:100%;
   height:300px;
@@ -200,17 +171,15 @@ label{font-size:.9rem;color:#ddd}
   border-radius:10px;
 }
 
-/* ---------- FOOTER ---------- */
-
+/* FOOTER */
 footer{
   text-align:center;
   padding:30px 10px 50px;
   color:#aaa;
-  font-size:.9rem;
+  font-size:.95rem;
 }
 </style>
 </head>
-
 <body>
 
 <div class="nav">
@@ -221,7 +190,6 @@ footer{
 <!-- HERO -->
 <section class="hero">
   <div class="hero-inner">
-
     <div class="badge">✦ Lafayette's Premier Detailing Service</div>
 
     <div class="title">
@@ -242,7 +210,6 @@ footer{
     <div class="callbar">
       Call <strong><a style="color:#fff;text-decoration:none" href="tel:17657143130">765-714-3130</a></strong>
     </div>
-
   </div>
 </section>
 
@@ -251,7 +218,6 @@ footer{
   <h2>Our <span>Services</span></h2>
 
   <div class="cards">
-
     <div class="card">
       <h3>Interior Deep Clean</h3>
       <p class="muted">Vacuuming, steam cleaning, leather conditioning and odor removal.</p>
@@ -266,44 +232,52 @@ footer{
 
     <div class="card">
       <h3>Ceramic Coating</h3>
-      <p class="muted">Long-lasting paint protection and showroom shine.</p>
+      <p class="muted">Long-lasting protection and showroom shine.</p>
       <div class="price">Starting at $300 • 1–2 days</div>
     </div>
 
     <div class="card">
       <h3>Engine Bay Cleaning</h3>
-      <p class="muted">Detailed under-the-hood cleaning and dressing.</p>
+      <p class="muted">Detailed engine compartment cleaning and dressing.</p>
       <div class="price">Starting at $50 • 1 hour</div>
     </div>
-
   </div>
 </section>
 
-<!-- GALLERY -->
+<!-- BEFORE / AFTER -->
 <section class="section">
-  <div class="gallery">
-    <img src="https://images.unsplash.com/photo-1605559424843-9e4c0b661f6b?q=80&w=800&auto=format&fit=crop">
-    <img src="https://images.unsplash.com/photo-1603386329225-868f9b1be9c9?q=80&w=800&auto=format&fit=crop">
-    <img src="https://images.unsplash.com/photo-1628519592419-bf288f08cef5?q=80&w=800&auto=format&fit=crop">
-    <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=800&auto=format&fit=crop">
+  <h2>Before & <span>After</span></h2>
+
+  <div class="ba-grid">
+
+    <div class="ba-card">
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4c0b661f6b?q=80&w=900&auto=format&fit=crop">
+      <div class="ba-label">Before</div>
+      <img src="https://images.unsplash.com/photo-1603386329225-868f9b1be9c9?q=80&w=900&auto=format&fit=crop">
+      <div class="ba-label">After</div>
+    </div>
+
+    <div class="ba-card">
+      <img src="https://images.unsplash.com/photo-1628519592419-bf288f08cef5?q=80&w=900&auto=format&fit=crop">
+      <div class="ba-label">Before</div>
+      <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=900&auto=format&fit=crop">
+      <div class="ba-label">After</div>
+    </div>
+
   </div>
 </section>
 
 <!-- TESTIMONIALS -->
 <section class="section">
   <h2>What Our <span>Customers</span> Say</h2>
-  <p class="muted">Don’t just take our word for it.</p>
 
   <div class="cards">
-
     <div class="card">
       <div class="stars">★★★★★</div>
       <p>“Best detailing in Lafayette! My truck looks brand new every time.”</p>
       <div style="display:flex;align-items:center">
         <div class="avatar">M</div>
-        <div>
-          <strong>Mike T.</strong><br><span class="muted">Verified customer</span>
-        </div>
+        <div><strong>Mike T.</strong><br><span class="muted">Verified customer</span></div>
       </div>
     </div>
 
@@ -312,36 +286,35 @@ footer{
       <p>“The ceramic coating was worth every penny. Incredible shine!”</p>
       <div style="display:flex;align-items:center">
         <div class="avatar">S</div>
-        <div>
-          <strong>Sarah K.</strong><br><span class="muted">Verified customer</span>
-        </div>
+        <div><strong>Sarah K.</strong><br><span class="muted">Verified customer</span></div>
       </div>
     </div>
-
   </div>
 </section>
 
-<!-- BOOK -->
+<!-- BOOK FORM -->
 <section class="section" id="book">
   <h2>Book Your <span>Detail</span></h2>
-  <p class="muted">Schedule your appointment online and we’ll take care of the rest.</p>
 
-  <form>
+  <form action="https://formsubmit.co/DJLockard@icloud.com" method="POST">
+
+    <input type="hidden" name="_subject" value="New Dirty D’s Auto Shine Booking Request">
+    <input type="hidden" name="_captcha" value="false">
 
     <label>Full Name *</label>
-    <input placeholder="John Doe" required>
+    <input name="name" placeholder="John Doe" required>
 
     <label>Email *</label>
-    <input type="email" placeholder="john@example.com" required>
+    <input type="email" name="email" placeholder="john@example.com" required>
 
     <label>Phone Number *</label>
-    <input placeholder="(765) 555-0123" required>
+    <input name="phone" placeholder="(765) 555-0123" required>
 
     <label>Vehicle Make / Model</label>
-    <input placeholder="2022 Ford F-150">
+    <input name="vehicle" placeholder="2022 Ford F-150">
 
     <label>Select Service *</label>
-    <select required>
+    <select name="service" required>
       <option>Interior Deep Clean</option>
       <option>Full Detail Package</option>
       <option>Ceramic Coating</option>
@@ -349,56 +322,37 @@ footer{
     </select>
 
     <label>Preferred Date *</label>
-    <input type="date" required>
+    <input type="date" name="date" required>
 
     <label>Preferred Time *</label>
-    <input type="time" required>
+    <input type="time" name="time" required>
 
     <label>Additional Notes</label>
-    <textarea rows="4" placeholder="Any special requests…"></textarea>
+    <textarea name="notes" rows="4" placeholder="Any special requests…"></textarea>
 
     <button class="submit" type="submit">Submit Booking Request</button>
 
     <p class="muted" style="margin-top:10px">
-      We’ll contact you at DJLockard@iCloud.com to confirm your appointment.
+      We’ll contact you at DJLockard@icloud.com to confirm your appointment.
     </p>
-
   </form>
 </section>
 
 <!-- CONTACT -->
 <section class="section">
   <h2>Get In <span>Touch</span></h2>
-  <p class="muted">Have questions? Ready to schedule your detail?</p>
 
   <div class="card">
-
-    <div class="contact-card">
-      📞 <strong>765-714-3130</strong>
-    </div>
-
-    <div class="contact-card">
-      ✉️ DJLockard@iCloud.com
-    </div>
-
-    <div class="contact-card">
-      📍 Lafayette, Indiana
-    </div>
-
-    <div class="contact-card">
-      🕘 Mon – Sat: 9AM – 6PM<br>
-      <span class="muted">Sunday: By appointment</span>
-    </div>
-
+    <p>📞 765-714-3130</p>
+    <p>✉️ DJLockard@icloud.com</p>
+    <p>📍 Lafayette, Indiana</p>
+    <p>🕘 Mon – Sat: 9AM – 6PM<br><span class="muted">Sunday: By appointment</span></p>
   </div>
 </section>
 
 <!-- MAP -->
 <section class="section map">
-  <iframe
-    src="https://www.google.com/maps?q=Lafayette,Indiana&output=embed"
-    loading="lazy">
-  </iframe>
+  <iframe src="https://www.google.com/maps?q=Lafayette,Indiana&output=embed" loading="lazy"></iframe>
 </section>
 
 <footer>
