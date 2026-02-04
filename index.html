@@ -1,1 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Dirty D’s Auto Shine</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<style>
+:root{
+  --blue:#0a3cff;
+  --light:#00b4ff;
+  --dark:#0b1c2d;
+}
+
+body{
+  margin:0;
+  font-family: Arial, sans-serif;
+  background:var(--dark);
+  color:#fff;
+}
+
+header{
+  background:linear-gradient(135deg,#0a3cff,#0033aa);
+  padding:40px 20px;
+  text-align:center;
+}
+
+header h1{
+  margin:0;
+  font-size:2.3rem;
+}
+
+header p{
+  margin-top:8px;
+  color:#d9e8ff;
+  font-size:1.1rem;
+}
+
+.btn{
+  display:inline-block;
+  background:var(--light);
+  color:#001021;
+  padding:14px 24px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:bold;
+  margin-top:15px;
+}
+
+.section{
+  padding:40px 18px;
+  max-width:900px;
+  margin:auto;
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:20px;
+  color:#cfe7ff;
+}
+
+/* cards */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;
+}
+
+.card{
+  background:#132b45;
+  border-radius:14px;
+  padding:20px;
+  box-shadow:0 10px 20px rgba(0,0,0,.25);
+}
+
+.card h3{
+  margin-top:0;
+  color:#7fd6ff;
+}
+
+/* pricing */
+.price{
+  font-size:1.2rem;
+  font-weight:bold;
+  color:#ffffff;
+  margin-top:8px;
+}
+
+/* about */
+.about{
+  line-height:1.6;
+  color:#e6f3ff;
+}
+
+/* footer */
+footer{
+  background:#081522;
+  text-align:center;
+  padding:25px 10px;
+  color:#9fc9ff;
+  font-size:.9rem;
+}
+
+/* top bar contact */
+.top-actions{
+  text-align:center;
+  margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Dirty D’s Auto Shine</h1>
+  <p>Mobile Auto Detailing • Big Shine from Dirty D</p>
+
+  <div class="top-actions">
+    <!-- Put your real phone number in the tel: link -->
+    <a class="btn" href="tel:7657143130">Call or Text for a Quote</a>
+  </div>
+</header>
+
+<section class="section about">
+  <h2>Why Dirty D’s?</h2>
+  <p>
+    With over 10 years of hands-on detailing experience, Dirty D’s Auto Shine
+    delivers professional, high-gloss results right at your home or job site.
+    From daily drivers to work trucks and family vehicles — we treat every ride
+    like a show car.
+  </p>
+</section>
+
+<section class="section">
+  <h2>Our Services</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Exterior Detail</h3>
+      <p>Hand wash, wheels & tires, decontamination, and high-gloss protection.</p>
+    </div>
+
+    <div class="card">
+      <h3>Interior Detail</h3>
+      <p>Deep vacuum, shampoo, stains, plastics, panels and odor refresh.</p>
+    </div>
+
+    <div class="card">
+      <h3>Full Detail Package</h3>
+      <p>Complete inside and out restoration for a true reset.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ceramic & Paint Protection</h3>
+      <p>Long-lasting protection and serious shine.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Popular Packages</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Interior Refresh</h3>
+      <p>Quick clean and detail for daily drivers.</p>
+      <div class="price">Starting at $—</div>
+    <section class="section">
+  <h2>Pricing & Packages</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Interior Refresh</h3>
+      <p>Vacuum, wipe-down, light stains, windows.</p>
+      <div class="price">Starting at $89</div>
+    </div>
+
+    <div class="card">
+      <h3>Exterior Shine</h3>
+      <p>Hand wash, wheels & tires, tire shine, spray sealant.</p>
+      <div class="price">Starting at $79</div>
+    </div>
+
+    <div class="card">
+      <h3>Full Detail</h3>
+      <p>Complete interior + exterior detail.</p>
+      <div class="price">Starting at $159</div>
+    </div>
+  </div>
+
+  <p style="text-align:center;margin-top:20px;color:#cfe7ff;">
+    Prices vary by vehicle size and condition. Final price confirmed on inspection.
+  </p>
+</section>
+<section class="section">
+  <h2>How It Works</h2>
+
+  <div class="cards">
+    <div class="card">
+      <h3>1. Book</h3>
+      <p>Call or text Dirty D and request your detail.</p>
+    </div>
+
+    <div class="card">
+      <h3>2. We Come To You</h3>
+      <p>Mobile service at your home or workplace.</p>
+    </div>
+
+    <div class="card">
+      <h3>3. You Ride Clean</h3>
+      <p>Drive away in a freshly detailed vehicle.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Book Your Detail</h2>
+  <p style="text-align:center;color:#e6f3ff;">
+    Ready to get your vehicle shining again?
+  </p>
+
+  <div style="text-align:center;">
+    <a class="btn" href="tel:7657143130">Call Dirty D Now</a>
+  </div>
+</section>
+
+<footer>
+  © <span id="year"></span> Dirty D’s Auto Shine<br>
+  Mobile Auto Detailing
+</footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+  
