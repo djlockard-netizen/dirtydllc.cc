@@ -1,364 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<title>Dirty D’s Auto Shine – Lafayette, Indiana</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<style>
-:root{
-  --blue:#19a7ff;
-  --bg:#05070a;
-  --card:#141414;
-  --muted:#b9b9b9;
-}
-
-*{box-sizing:border-box}
-
-body{
-  margin:0;
-  font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Arial,sans-serif;
-  background:var(--bg);
-  color:#fff;
-  font-size:18px;
-}
-
-/* NAV */
-.nav{
-  position:fixed;
-  top:0;left:0;right:0;
-  z-index:10;
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:16px 18px;
-  background:rgba(0,0,0,.5);
-  backdrop-filter:blur(6px);
-}
-.brand{font-weight:700;font-size:1.35rem;}
-.brand span{color:var(--blue);}
-.menu{font-size:1.4rem}
-
-/* HERO */
-.hero{
-  min-height:100vh;
-  padding:100px 18px 40px;
-  display:flex;
-  justify-content:center;
-  background:
-    linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
-    radial-gradient(900px 600px at 80% 10%, rgba(25,167,255,.15), transparent 60%);
-}
-.hero-inner{max-width:540px;width:100%}
-.badge{
-  display:inline-flex;
-  gap:8px;
-  border:1px solid rgba(25,167,255,.6);
-  color:var(--blue);
-  padding:10px 14px;
-  border-radius:6px;
-  margin-bottom:22px;
-  font-size:.9rem;
-}
-.title{font-weight:900;line-height:.95;margin-bottom:16px;}
-.title div{font-size:3.5rem;}
-.title .blue{color:var(--blue);}
-.tagline{font-style:italic;font-size:1.4rem;margin-bottom:14px;}
-.sub{color:#cfcfcf;line-height:1.7;margin-bottom:22px;font-size:1.05rem;}
-.btn{
-  display:block;
-  text-align:center;
-  padding:18px;
-  background:var(--blue);
-  color:#00131f;
-  text-decoration:none;
-  font-weight:800;
-  border-radius:4px;
-  margin-bottom:18px;
-}
-.callbar{
-  border:1px solid rgba(255,255,255,.15);
-  padding:14px;
-  border-radius:4px;
-  background:rgba(255,255,255,.05);
-  text-align:center;
-}
-
-/* SECTIONS */
-.section{
-  padding:60px 18px;
-  max-width:900px;
-  margin:auto;
-}
-h2{margin-top:0;font-size:2.4rem;}
-h2 span{color:var(--blue);}
-.muted{color:#cfcfcf}
-
-/* CARDS */
-.cards{display:grid;gap:18px;}
-.card{
-  background:linear-gradient(180deg,#191919,#121212);
-  border-radius:10px;
-  padding:20px;
-  border:1px solid rgba(255,255,255,.05);
-}
-.card.highlight{border:1px solid rgba(25,167,255,.6);}
-.card h3{margin-top:8px;font-size:1.25rem}
-.price{color:var(--blue);font-weight:800;margin-top:10px}
-
-/* BEFORE AFTER */
-.ba-grid{display:grid;gap:22px;}
-.ba-card{
-  background:linear-gradient(180deg,#191919,#121212);
-  padding:12px;
-  border-radius:10px;
-  border:1px solid rgba(255,255,255,.06);
-}
-.ba-card img{
-  width:100%;
-  border-radius:8px;
-  margin-bottom:6px;
-}
-.ba-label{
-  text-align:center;
-  color:var(--blue);
-  font-weight:800;
-  margin-bottom:10px;
-}
-
-/* TESTIMONIALS */
-.stars{color:var(--blue);letter-spacing:2px;margin-bottom:8px}
-.avatar{
-  width:36px;height:36px;
-  border-radius:6px;
-  background:#0e2a3b;
-  color:var(--blue);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  font-weight:800;
-  margin-right:10px;
-}
-
-/* FORM */
-input,select,textarea{
-  width:100%;
-  background:#1a1a1a;
-  border:1px solid rgba(255,255,255,.12);
-  color:#fff;
-  padding:13px;
-  border-radius:4px;
-  margin-bottom:16px;
-  font-size:1rem;
-}
-label{font-size:.95rem;color:#ddd}
-.submit{
-  background:var(--blue);
-  border:none;
-  color:#00131f;
-  font-weight:800;
-  padding:16px;
-  width:100%;
-  border-radius:4px;
-  font-size:1.05rem;
-}
-
-/* MAP */
-.map iframe{
-  width:100%;
-  height:300px;
-  border:0;
-  border-radius:10px;
-}
-
-/* FOOTER */
-footer{
-  text-align:center;
-  padding:30px 10px 50px;
-  color:#aaa;
-  font-size:.95rem;
-}
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Dirty D’s Auto Shine | Lafayette, IN</title>
+  <meta name="description" content="Professional auto detailing in Lafayette, Indiana. From Dirty to Dazzling. Call 765-714-3130." />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
 
-<div class="nav">
-  <div class="brand">Dirty <span>D’s</span></div>
-  <div class="menu">☰</div>
-</div>
+<header class="nav">
+  <div class="brand">
+    <img src="assets/logo.png" alt="Dirty D’s Auto Shine Logo">
+  </div>
+  <div class="menu">&#9776;</div>
+</header>
 
-<!-- HERO -->
 <section class="hero">
-  <div class="hero-inner">
-    <div class="badge">✦ Lafayette's Premier Detailing Service</div>
+  <h1>
+    Dirty <span class="blue">D’s</span><br>
+    Auto Shine
+  </h1>
 
-    <div class="title">
-      <div>Dirty</div>
-      <div class="blue">D’s</div>
-      <div>Auto Shine</div>
-    </div>
+  <p class="tagline">From Dirty to Dazzling.</p>
 
-    <div class="tagline">From Dirty to Dazzling.</div>
+  <p class="subtext">
+    Professional auto detailing services in Lafayette, Indiana.
+    Interior & exterior detailing done right.
+  </p>
 
-    <div class="sub">
-      Professional auto detailing services in Lafayette, Indiana.
-      We transform your vehicle from dirty to dazzling with our premium detailing packages.
-    </div>
+  <a href="tel:17657143130" class="btn primary">Book Your Detail →</a>
+  <a href="tel:17657143130" class="btn secondary">
+    Call <strong>765-714-3130</strong>
+  </a>
+</section>
 
-    <a class="btn" href="#book">Book Your Detail →</a>
+<section class="services">
+  <h2>Our <span class="blue">Services</span></h2>
 
-    <div class="callbar">
-      Call <strong><a style="color:#fff;text-decoration:none" href="tel:17657143130">765-714-3130</a></strong>
-    </div>
+  <div class="grid">
+    <div class="card">Interior Detailing</div>
+    <div class="card">Exterior Detailing</div>
+    <div class="card">Full Detail Packages</div>
+    <div class="card">Wash • Wax • Polish</div>
   </div>
 </section>
 
-<!-- SERVICES -->
-<section class="section" id="services">
-  <h2>Our <span>Services</span></h2>
-
-  <div class="cards">
-    <div class="card">
-      <h3>Interior Deep Clean</h3>
-      <p class="muted">Vacuuming, steam cleaning, leather conditioning and odor removal.</p>
-      <div class="price">Starting at $100 • 2–3 hours</div>
-    </div>
-
-    <div class="card highlight">
-      <h3>Full Detail Package</h3>
-      <p class="muted">Complete interior and exterior transformation.</p>
-      <div class="price">Starting at $175 • 4–5 hours</div>
-    </div>
-
-    <div class="card">
-      <h3>Ceramic Coating</h3>
-      <p class="muted">Long-lasting protection and showroom shine.</p>
-      <div class="price">Starting at $300 • 1–2 days</div>
-    </div>
-
-    <div class="card">
-      <h3>Engine Bay Cleaning</h3>
-      <p class="muted">Detailed engine compartment cleaning and dressing.</p>
-      <div class="price">Starting at $50 • 1 hour</div>
-    </div>
-  </div>
-</section>
-
-<!-- BEFORE / AFTER -->
-<section class="section">
-  <h2>Before & <span>After</span></h2>
-
-  <div class="ba-grid">
-
-    <div class="ba-card">
-      <img src="https://images.unsplash.com/photo-1605559424843-9e4c0b661f6b?q=80&w=900&auto=format&fit=crop">
-      <div class="ba-label">Before</div>
-      <img src="https://images.unsplash.com/photo-1603386329225-868f9b1be9c9?q=80&w=900&auto=format&fit=crop">
-      <div class="ba-label">After</div>
-    </div>
-
-    <div class="ba-card">
-      <img src="https://images.unsplash.com/photo-1628519592419-bf288f08cef5?q=80&w=900&auto=format&fit=crop">
-      <div class="ba-label">Before</div>
-      <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?q=80&w=900&auto=format&fit=crop">
-      <div class="ba-label">After</div>
-    </div>
-
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="section">
-  <h2>What Our <span>Customers</span> Say</h2>
-
-  <div class="cards">
-    <div class="card">
-      <div class="stars">★★★★★</div>
-      <p>“Best detailing in Lafayette! My truck looks brand new every time.”</p>
-      <div style="display:flex;align-items:center">
-        <div class="avatar">M</div>
-        <div><strong>Mike T.</strong><br><span class="muted">Verified customer</span></div>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="stars">★★★★★</div>
-      <p>“The ceramic coating was worth every penny. Incredible shine!”</p>
-      <div style="display:flex;align-items:center">
-        <div class="avatar">S</div>
-        <div><strong>Sarah K.</strong><br><span class="muted">Verified customer</span></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- BOOK FORM -->
-<section class="section" id="book">
-  <h2>Book Your <span>Detail</span></h2>
-
-  <form action="https://formsubmit.co/DJLockard@icloud.com" method="POST">
-
-    <input type="hidden" name="_subject" value="New Dirty D’s Auto Shine Booking Request">
-    <input type="hidden" name="_captcha" value="false">
-
-    <label>Full Name *</label>
-    <input name="name" placeholder="John Doe" required>
-
-    <label>Email *</label>
-    <input type="email" name="email" placeholder="john@example.com" required>
-
-    <label>Phone Number *</label>
-    <input name="phone" placeholder="(765) 555-0123" required>
-
-    <label>Vehicle Make / Model</label>
-    <input name="vehicle" placeholder="2022 Ford F-150">
-
-    <label>Select Service *</label>
-    <select name="service" required>
-      <option>Interior Deep Clean</option>
-      <option>Full Detail Package</option>
-      <option>Ceramic Coating</option>
-      <option>Engine Bay Cleaning</option>
-    </select>
-
-    <label>Preferred Date *</label>
-    <input type="date" name="date" required>
-
-    <label>Preferred Time *</label>
-    <input type="time" name="time" required>
-
-    <label>Additional Notes</label>
-    <textarea name="notes" rows="4" placeholder="Any special requests…"></textarea>
-
-    <button class="submit" type="submit">Submit Booking Request</button>
-
-    <p class="muted" style="margin-top:10px">
-      We’ll contact you at DJLockard@icloud.com to confirm your appointment.
-    </p>
-  </form>
-</section>
-
-<!-- CONTACT -->
-<section class="section">
-  <h2>Get In <span>Touch</span></h2>
-
-  <div class="card">
-    <p>📞 765-714-3130</p>
-    <p>✉️ DJLockard@icloud.com</p>
-    <p>📍 Lafayette, Indiana</p>
-    <p>🕘 Mon – Sat: 9AM – 6PM<br><span class="muted">Sunday: By appointment</span></p>
-  </div>
-</section>
-
-<!-- MAP -->
-<section class="section map">
-  <iframe src="https://www.google.com/maps?q=Lafayette,Indiana&output=embed" loading="lazy"></iframe>
+<section class="cta">
+  <h2>Get Your Ride <span class="blue">Looking Right</span></h2>
+  <p>Call or text today to book your detail.</p>
+  <a href="tel:17657143130" class="btn primary">Call Now</a>
 </section>
 
 <footer>
-  © 2026 Dirty D’s Auto Shine. All rights reserved.<br>
-  dirtydllc.cc
+  <p>© 2026 Dirty D’s Auto Shine • Lafayette, IN</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
