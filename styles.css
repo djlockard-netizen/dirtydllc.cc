@@ -27,7 +27,22 @@ body {
 }
 
 .menu {
-  font-size: 26px;
+  font-size: 26px;.ba-card.placeholder {
+  background: #0f1b26;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 160px;
+  text-align: center;
+  border: 1px dashed rgba(255,255,255,.25);
+}
+
+.ba-card .ph {
+  color: rgba(255,255,255,.7);
+  font-size: .9rem;
+  padding: 14px;
+  line-height: 1.4;
+}
   cursor: pointer;
 }
 
