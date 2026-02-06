@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top, #0b1a24, #000);
+  color: #fff;
+  line-height: 1.6;
+}
+
+.blue {
+  color: #1ea7ff;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.brand img {
+  height: 42px;
+}
+
+.menu {
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.hero {
+  padding: 40px 20px 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.tagline {
+  margin-top: 10px;
+  font-style: italic;
+  opacity: 0.9;
+}
+
+.subtext {
+  margin: 20px 0 30px;
+  max-width: 520px;
+  opacity: 0.85;
+}
+
+.btn {
+  display: block;
+  padding: 16px;
+  margin-bottom: 14px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+.primary {
+  background: #1ea7ff;
+  color: #000;
+}
+
+.secondary {
+  border: 1px solid #444;
+  color: #fff;
+}
+
+.services {
+  padding: 60px 20px;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #0f0f0f;
+  padding: 22px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.cta {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  font-size: 0.9rem;
+  opacity: 0.6;
+}
